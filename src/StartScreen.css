@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/public/Antarctica-Snow.jpg'); /* 이미지 파일의 경로 */
+  background-size: cover; /* 이미지를 창에 맞춰 확대하여 채웁니다. */
+  background-repeat: no-repeat; /* 이미지 반복 없음 */
+  background-position: center; /* 이미지를 가운데 정렬합니다. */
+  height: 100vh; /* 창의 높이에 맞춰 body 요소의 높이를 설정합니다. */
+  margin: 0; /* body 요소의 기본 마진을 제거합니다. */
+  display: flex; /* 내용을 수직 가운데 정렬하기 위해 Flexbox를 사용합니다. */
+  justify-content: center; /* 수평 가운데 정렬합니다. */
+  align-items: left ; /* 수직 가운데 정렬합니다. */
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.lookpeng {
+  width: 200px; /* 이미지의 가로 크기를 200px로 설정 */
+  height: 200px; /* 이미지의 세로 크기를 200px로 설정 */
+  border-radius: 50%; /* 이미지를 동그랗게 만듭니다 */
+  border: 2px solid pink; /* 귀여운 테두리 스타일 및 색상을 설정합니다 */
+  position: relative; /* 위치를 상대적으로 설정합니다 */
+  top: -20px; /* 위쪽으로 20px 이동합니다 */
+  right: -20px; /* 오른쪽으로 20px 이동합니다 */
+}

@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/public/Antarctica-Snow.jpg'); /* 이미지 파일의 경로 */
+  background-size: cover; /* 이미지를 창에 맞춰 확대하여 채웁니다. */
+  background-repeat: no-repeat; /* 이미지 반복 없음 */
+  background-position: center; /* 이미지를 가운데 정렬합니다. */
+  height: 100vh; /* 창의 높이에 맞춰 body 요소의 높이를 설정합니다. */
+  margin: 0; /* body 요소의 기본 마진을 제거합니다. */
+  display: flex; /* 내용을 수직 가운데 정렬하기 위해 Flexbox를 사용합니다. */
+  justify-content: center; /* 수평 가운데 정렬합니다. */
+  align-items: left ; /* 수직 가운데 정렬합니다. */
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+h1 {
+  margin-top: 50px; /* 제목 위 여백 조절 */
+  font-family: 'Comic Sans MS', cursive; /* 이쁜 펭귄 키우기 글꼴 적용 */
+  font-size: 72px; /* h1 요소의 크기를 크게 설정 */
+  font-weight: bold; /* 굵은체 */
+  color: white; /* 흰색 */
+  margin-bottom: 15vh; /* 아래쪽 여백 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px rgba(0, 0, 0, 0.8); /* 그림자 효과 */
+  text-stroke: 1px white; /* 모든 브라우저에서 지원되는 텍스트 가장자리 효과 */
+  
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: #b3d9ff; /* 연한 파란색 배경 */
+  color: #004080; /* 진한 파란색 텍스트 */
+  border: 2px solid #b3d9ff; /* 배경 색과 동일한 테두리 */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* 입체적인 그림자 효과 */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 */
+}
+
+.button:hover {
+  background-color: #3366ff; /* 호버 시 더 어두운 파란색 */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 크기 조정 */
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 60px; /* 이미지의 너비를 조정하세요 */
+  height: 60px; /* 이미지의 높이를 조정하세요 */
+  font-size : 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: skyblue;
+  border: 2px solid #007bff; /* 테두리 스타일 및 색상 설정 */
+  border-radius: 10px; /* 테두리의 둥근 정도를 조정합니다 */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
